@@ -21,7 +21,7 @@ print(reddit.user.me())
 #This is one of the method in PRAW, using subreddit called Waltonchain
 subreddit=reddit.subreddit('waltonchain')
 
-# We are writing to csv file
+# We are writing to csv file, newline is needed so our data don't spread out.
 with open('walton.csv','w',newline='') as f:
     writer=csv.writer(f)
 
